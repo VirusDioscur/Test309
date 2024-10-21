@@ -1,0 +1,44 @@
+﻿<Window x:Class="Треугольники.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Треугольники"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#00A6FF">
+    <Grid>
+
+
+        <StackPanel Grid.Row="1" Width="700" HorizontalAlignment="Center" Height="200">
+
+            <TextBlock Name="tb2" Text="Полученный треугольник" FontSize="22" HorizontalAlignment="Center"
+                       Foreground="#FDFDFD" FontFamily="#Calibri" VerticalAlignment="Center" Opacity="0"/>
+
+            <Button    Name="b2" Margin="0,40,0,0" Height=" 50" HorizontalAlignment="Center" Width="300"
+                       Background="#FDE215" Content="Попробовать ещё" FontSize="20" Click="b2_Click" Opacity="0" />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Width="700" HorizontalAlignment="Center" Height="200">
+
+            <TextBlock Name="tb1" Text="Введите длины сторон треугольника" Width="350"
+                       FontSize="22" HorizontalAlignment="Center" Foreground="#FDFDFD"
+                       VerticalAlignment="Top" FontFamily="#Calibri"/>
+
+            <TextBox Name="side1" Margin="0,30,0,0" Height=" 40" VerticalAlignment="Top"
+                     HorizontalAlignment="Left" Width="200" Background="#FDFDFD" FontSize="20" PreviewTextInput="side1_PreviewTextInput"/>
+
+            <TextBox Name="side2" Margin="0,-40,0,0"  Height=" 40" VerticalAlignment="Top"
+                     HorizontalAlignment="Center" Width="200" Background="#FDFDFD" FontSize="20" PreviewTextInput="side2_PreviewTextInput"/>
+
+            <TextBox Name="side3" Margin="0,-40,0,0" Height=" 40" VerticalAlignment="Top"
+                     HorizontalAlignment="Right" Width="200" Background="#FDFDFD" FontSize="20" PreviewTextInput="side3_PreviewTextInput"/>
+
+            <Button    Name="b1" Margin="0,40,0,0" Height=" 50" HorizontalAlignment="Center" Width="300"
+                       Background="#FDE215" Content="Проверить" FontSize="20" Click="b1_Click"/>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>
